@@ -1,6 +1,8 @@
+//'use server'
+
 import { logEvent } from "@/utils/sentery";
 import { SignJWT, jwtVerify } from "jose";
-import { cookies } from "next/headers";
+import { cookies } from 'next/headers';
 
 
 const secret = new TextEncoder().encode(process.env.AUTH_SECRET);
