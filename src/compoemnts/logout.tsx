@@ -18,6 +18,7 @@ const LogoutButton = () => {
         if (state.success) {
             toast.success('Logout successful');
         } else if (state.message) {
+
             toast.error(state.message);
         }
     }, [state]);
